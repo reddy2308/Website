@@ -1,0 +1,135 @@
+.header{
+    height:55px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color: rgb(152, 109, 76);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228,228,228);
+    z-index:100;
+}
+.left-section{
+    display:flex;
+    align-items: center;
+}
+.home{
+    height:40px;
+    margin-left: 24px;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+.about-button a{
+    font-size: 20px;
+    color: #000000d9;
+    text-decoration: none;
+    border-radius: 5px;
+    padding:3px;
+    transition:0.15s;
+}
+.about-button a:hover{
+    background-color: black;
+    color:white;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+.social-button{
+    font-size:15px;
+    height:40px;
+    width:60px;
+    background-color: rgb(66, 135, 237);
+    border:0;
+    cursor: pointer;
+}
+.social-button:hover{
+    color:white;
+    background-color: rgb(36, 114, 232);
+}
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:white;
+    border-radius:5px;
+    border-color: black;
+    border-width:1px;
+    border-style: solid;
+}
+  
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+  
+.dropdown-options a {
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+}
+  
+.dropdown-options a:hover {
+    color: blue;
+    background-color: white;
+    border-radius:5px;
+}
+
+.middle-section{
+    display:flex;
+    align-items:center;
+    width:400px;
+}
+.search-bar{
+    flex:1;
+    height:30px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-style:solid;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border:0;
+}
+.search-button{
+    height:32.5px;
+    width:66px;
+    background-color: rgb(240,240,240);
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(192,192,192);
+    display: flex;
+    padding-left:0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.search-icon{
+    height:26px;
+}
+
+.right-section{
+    display:flex;
+    align-items: center;
+    margin-right:20px;
+}
+.sign-in-button , .sign-up-button{
+    height:40px;
+    width:80px;
+    border-width:1px;
+    border-color:white;
+    border-style:solid;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+.sign-in-button:hover , .sign-up-button:hover{
+    background-color: white;
+    color:black;
+}
